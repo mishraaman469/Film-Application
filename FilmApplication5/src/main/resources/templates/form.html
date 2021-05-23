@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+<script type="text/javascript" src="post.js"></script>
+<style type="text/css">
+	#cnt{
+		border:solid 2px black;
+		margin-left: 250px;
+		width:900px;
+		margin-top: 200px;
+	}	
+	body{
+		background-image: url("director1.jpg");
+		background-size: cover;
+		color: white;
+	}
+	label{
+		font-family: verdana;
+		font-size: 20px;
+	}
+	button{
+		background-color: red;
+		color:white;
+		width:120px;
+		height:40px;
+	}
+	input{
+		width:150px;
+		height:25px;
+		border-radius: 10px;
+	}
+	h1{
+		color: red;
+		font-size: 60px;
+		font-family: verdana;
+		margin-left: 400px;
+	}
+
+
+</style>
+</head>
+<body>
+	<h1>Movie Details</h1>
+	<div id="cnt">
+ <div>
+		<label for="Comment">Director</label>
+		<div id="fig"></div>
+		<button id="btn">Add new</button>
+	</div>
+
+
+<form id="myform">
+		<div>
+			<label for="name">Name : </label> 
+			<input type="text" name="name"	id="name">
+		</div>
+		<div>
+			<label for="boxOfficeCollection">Box Office Collection : </label>
+			 <input type="number" name="boxOfficeCollection" id="boxOfficeCollection">
+		</div>
+		<div>
+			<label for="rating">Rating : </label> 
+			<input type="number" name="rating" id="rating">
+		</div>
+		       
+		<div>
+			<button id="btn1">submit</button>
+		</div>
+	</form>
+</div>
+</body>
+</html>

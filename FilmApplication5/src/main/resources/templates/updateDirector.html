@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+ 
+<html>
+<head>
+      <title>Spring Boot - DELETE-UPDATE AJAX Example</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="ajaxGet.js"></script>
+       <script src="ajaxPut.js"></script>      
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+
+<body>
+<div class="container">
+	<h1>Director List</h1>
+    <div id="directorlist">
+    	<ul class="list-group">
+		</ul>
+    </div>
+
+	<div id="updateCustomerId" class="row col-md-6" style="">
+	<h3>Here to Edit Info of Director: </h3>
+	<form id="customizedForm" style='background-color:#7FA7B0; color:white; padding:20px 20px 20px 20px'>
+	  <div class="form-group">
+	    <label for="updateFormDirId">CustomerId</label>
+	    <input type="text" class="form-control" id="updateFormDirId" disabled="disabled"></input>
+	  </div>
+	  <div class="form-group">
+	    <label for="updateFormName">First Name:</label>
+	    <input type="text" class="form-control" id="updateFormName" required="required" disabled="disabled"/>
+	  </div>
+	  <div class="form-group">
+	    <label for="updateFormGender">Gender :</label>
+	    <input type="text" class="form-control" id="updateFormGender" required="required" disabled="disabled"/>
+	  </div>
+	  <div class="form-group">
+	    <label for="updateFormAge">Age:</label>
+	    <input type="number"  class="form-control" id="updateFormAge" required="required"/>
+	  </div>
+	  <div class="form-group">
+	    <label for="updateFormAwardCount">Award Count:</label>
+	    <input type="number"  class="form-control" id="updateFormAwardCount" required="required"/>
+	  </div>
+	  
+
+	  <button type="submit" class="btn btn-default">Update</button>
+	</form>
+	
+	<div id="putResultDiv" style="margin:10px 0px 10px 0px;">
+	</div>
+	
+	</div>
+</div>
+</body>
+</html>
