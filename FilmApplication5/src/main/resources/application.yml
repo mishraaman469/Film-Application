@@ -1,3 +1,5 @@
+server:
+ port: 8081
 Spring:
  datasource:
   url: jdbc:mysql://localhost:3306/film
